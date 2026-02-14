@@ -16,13 +16,14 @@ x = Student("Mike", "Olsen")
 x.printname()
 
 
-class Animal:
-    def sound(self):
-        print("Some sound")
+class Person:
+    def walk(self):
+        print("Walking")
 
-class Dog(Animal):
-    def sound(self):
-        print("Woof!")
+class Student(Person):
+    def study(self):
+        print("Studying")
+
 
 
 class Animal:
@@ -35,14 +36,14 @@ d = Dog()
 d.eat()
 
 
-class Animal:
-    def sound(self):
-        print("Animal sound")
-class Cat(Animal):
-    def sound(self):
-        print("Meow")
-c = Cat()
-c.sound()
+class A:
+    def hello(self):
+        print("Hello")
+
+class B(A):
+    pass
+b = B()
+b.hello()
 
 
 class Vehicle:
