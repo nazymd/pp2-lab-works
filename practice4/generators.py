@@ -1,25 +1,51 @@
-from datetime import datetime, date, time, timedelta
-today=date.today()
-past=today-timedelta(days=5)
-print (today)
-print(past)
+def div(num):
+    for i in range(0, num+1):
+        if i % 12 == 0:
+            yield i
 
-today=date.today()
-yesterday=today-timedelta(days=1)
-tommorrow=today+timedelta(days=1)
-print (yesterday, today, tommorrow)
-
-
-now = datetime.now()
-drop = now.replace(microsecond=0)
-print("with microseconds:", now)
-print("without microseconds:", drop)
+n=int(input())
+d=div(n)
+for i in d:
+    print(i)
 
 
-date1_str = input("YYYY-MM-DD HH:MM:SS: ")
-date2_str = input("YYYY-MM-DD HH:MM:SS: ")
-date1 = datetime.strptime(date1_str, "%Y-%m-%d %H:%M:%S")
-date2 = datetime.strptime(date2_str, "%Y-%m-%d %H:%M:%S")
-diff = date2 - date1
-seconds = diff.total_seconds()
-print(seconds)
+def down(num):
+    for i in range(num, -1, -1):
+        yield i
+n=int(input())
+d=down(n)
+for i in d:
+    print(i)
+
+
+def even(num):
+    for i in range(0, num+1):
+        if i % 2 == 0:
+            yield i
+
+n=int(input())
+e=even(n)
+cnt=0
+for i in e:
+    cnt+=1
+    if cnt != (n // 2)+1:
+        print (i, end=",")
+    else:
+        print(i, end="")
+
+
+def square(num):
+    for i in  range(1, num + 1):
+        yield i*i
+n=int(input())
+s=square(n)
+for i in s:
+    print(i)
+
+
+def square(a, b):
+    for i in range (a, b+1):
+        yield i * i
+n, m=map(int, input().split())
+for i in square(n, m):
+    print(i)
