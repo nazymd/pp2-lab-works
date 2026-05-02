@@ -1,6 +1,6 @@
 import pygame
 import sys
-from persistence import load_leaderboard, load_settings, save_settings
+from TSIS3.persistence import load_leaderboard, load_settings, save_settings
 
 pygame.init()
 

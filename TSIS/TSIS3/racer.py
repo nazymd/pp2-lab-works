@@ -1,7 +1,7 @@
 import pygame
 import random
 import sys
-from persistence import save_score, load_settings
+from TSIS3.persistence import save_score, load_settings
 
 pygame.init()
 
