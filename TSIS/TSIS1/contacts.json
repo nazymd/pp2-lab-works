@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Ali",
+    "email": "ali@gmail.com",
+    "group": "friends",
+    "phones": [
+      ["+77011111111", "mobile"],
+      ["+77012222222", "home"]
+    ]
+  },
+  {
+    "name": "Dana",
+    "email": "dana@mail.com",
+    "group": "work",
+    "phones": [
+      ["+77013333333", "work"]
+    ]
+  }
+]
